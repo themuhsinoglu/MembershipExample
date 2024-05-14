@@ -1,6 +1,8 @@
 ﻿namespace Membership.Domain;
 
-public class CustomerStatusType
+ public enum CustomerStatusType
 {
-
+    Active = 0,
+    Passive,
+    Reject
 }

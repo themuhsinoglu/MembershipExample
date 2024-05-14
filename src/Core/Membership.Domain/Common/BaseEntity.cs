@@ -12,8 +12,7 @@ namespace Membership.Domain.Common
           Id = default!;
         }
         public T Id { get; set; } = default!;
-        public DateTime StartDate { get; set; } = default!;
-        public DateTime EndDate { get; set; } =default!;
+        public DateTime CreatedDate { get; set; } = default!;
         public DateTime? ModifiedDate { get; set; } 
         public DateTime? DeletedDate { get; set; }
 
