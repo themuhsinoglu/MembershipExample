@@ -1,19 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Membership.Domain.Common
 {
-    public class BaseEntity<T>
+    abstract public class BaseEntity
     {
         public BaseEntity()
         {
-          Id = default!;
+            Id = Guid.NewGuid();
+            CreatedDate = DateTime.Now;
         }
-        public T Id { get; set; } = default!;
+
+        public Guid? Id { get; set; } = default!;
         public DateTime CreatedDate { get; set; } = default!;
-        public DateTime? ModifiedDate { get; set; } 
+        public DateTime? ModifiedDate { get; set; }
         public DateTime? DeletedDate { get; set; }
 
     }

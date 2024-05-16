@@ -1,8 +1,8 @@
 ﻿namespace Membership.Domain;
 
- public enum MembershipType
+public enum MembershipType
 {
-    Standart=0,
+    Standart = 0,
     Premium,
     Gold
 }

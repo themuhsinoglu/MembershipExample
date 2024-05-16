@@ -11,15 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{1454EC44-6681-4F4C-9B3B-11829A2D1BC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Membership.Application", "src\Core\Membership.Application\Membership.Application.csproj", "{DD8A02DB-635C-43A9-B74C-E96CD4433ADB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Membership.Application", "src\Core\Membership.Application\Membership.Application.csproj", "{DD8A02DB-635C-43A9-B74C-E96CD4433ADB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Membership.Infrastructure", "src\Infrastructure\Membership.Infrastructure\Membership.Infrastructure.csproj", "{297B70B1-782F-4EDF-8A34-F71B963CC9E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Membership.Infrastructure", "src\Infrastructure\Membership.Infrastructure\Membership.Infrastructure.csproj", "{297B70B1-782F-4EDF-8A34-F71B963CC9E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Membership.WepAPI", "src\Presentation\Membership.WepApı\Membership.WepAPI.csproj", "{4048B6AF-BE0F-4AA5-A2B6-A9C808F52719}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Membership.Persistence", "src\Infrastructure\Membership.Persistence\Membership.Persistence.csproj", "{B0CB8F31-F7D0-4E2A-BC0B-7FEA396A5028}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Membership.Persistence", "src\Infrastructure\Membership.Persistence\Membership.Persistence.csproj", "{B0CB8F31-F7D0-4E2A-BC0B-7FEA396A5028}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Membership.Domain", "src\Core\Membership.Domain\Membership.Domain.csproj", "{8D8B4BBB-3BB9-4BBB-B229-21558FCB7B7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Membership.Domain", "src\Core\Membership.Domain\Membership.Domain.csproj", "{8D8B4BBB-3BB9-4BBB-B229-21558FCB7B7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MembershipExample.API", "src\Presentation\MembershipExample.API\MembershipExample.API.csproj", "{03C0BDF3-05E5-448C-B291-23B33F0D2516}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,6 @@ Global
 		{297B70B1-782F-4EDF-8A34-F71B963CC9E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{297B70B1-782F-4EDF-8A34-F71B963CC9E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{297B70B1-782F-4EDF-8A34-F71B963CC9E3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4048B6AF-BE0F-4AA5-A2B6-A9C808F52719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4048B6AF-BE0F-4AA5-A2B6-A9C808F52719}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4048B6AF-BE0F-4AA5-A2B6-A9C808F52719}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4048B6AF-BE0F-4AA5-A2B6-A9C808F52719}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B0CB8F31-F7D0-4E2A-BC0B-7FEA396A5028}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B0CB8F31-F7D0-4E2A-BC0B-7FEA396A5028}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0CB8F31-F7D0-4E2A-BC0B-7FEA396A5028}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -47,6 +43,10 @@ Global
 		{8D8B4BBB-3BB9-4BBB-B229-21558FCB7B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D8B4BBB-3BB9-4BBB-B229-21558FCB7B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D8B4BBB-3BB9-4BBB-B229-21558FCB7B7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03C0BDF3-05E5-448C-B291-23B33F0D2516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03C0BDF3-05E5-448C-B291-23B33F0D2516}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03C0BDF3-05E5-448C-B291-23B33F0D2516}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03C0BDF3-05E5-448C-B291-23B33F0D2516}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,9 +57,9 @@ Global
 		{1454EC44-6681-4F4C-9B3B-11829A2D1BC7} = {8B5825EE-155F-4762-88B9-747E4EB6C1FA}
 		{DD8A02DB-635C-43A9-B74C-E96CD4433ADB} = {8BF22FDF-AEFD-4B83-8EC8-7BF1C8686DDD}
 		{297B70B1-782F-4EDF-8A34-F71B963CC9E3} = {887A7411-FF5B-4A0D-9F47-CBFDF635311B}
-		{4048B6AF-BE0F-4AA5-A2B6-A9C808F52719} = {1454EC44-6681-4F4C-9B3B-11829A2D1BC7}
 		{B0CB8F31-F7D0-4E2A-BC0B-7FEA396A5028} = {887A7411-FF5B-4A0D-9F47-CBFDF635311B}
 		{8D8B4BBB-3BB9-4BBB-B229-21558FCB7B7C} = {8BF22FDF-AEFD-4B83-8EC8-7BF1C8686DDD}
+		{03C0BDF3-05E5-448C-B291-23B33F0D2516} = {1454EC44-6681-4F4C-9B3B-11829A2D1BC7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {428818D3-91E7-4F6E-B7AF-7DA4F2578AF8}

@@ -2,7 +2,7 @@
 
 public enum PaymentType
 {
-    Cash=0,
+    Cash = 0,
     Credit,
     MoneyTransfer
 }
