@@ -12,16 +12,10 @@ namespace MembershipExample.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Add([FromBody] CreateCustomerCommand createCustomerCommand)
         {
-            //var validationResult =await ValidateAndHandle(createCustomerCommand);
-
-            //if (!validationResult.IsValid)
-            //{
-            //    return BadRequest(validationResult.Errors);
-            //}
-
             CreateCustomerResponse response = await Mediator!.Send(createCustomerCommand);
             return Ok(response);
         }
+        
         [HttpGet]
         public async Task<IActionResult> GetByUserId([FromQuery] GetByUserIdCustomerQuery request)
         {
