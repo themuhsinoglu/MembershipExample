@@ -21,6 +21,13 @@ namespace Membership.Persistence.Repositories
             return model;
         }
 
+        public async Task<T> UpdateAsync(T model)
+        {
+             Table.Update(model);
+            await _membershipContext.SaveChangesAsync();
+            return model;
+        }
+
         public async Task<List<T>> GetAsync()
         {
             return await Table.ToListAsync();

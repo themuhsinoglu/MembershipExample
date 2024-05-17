@@ -9,6 +9,7 @@ namespace Membership.Application.Interfaces.Repositories
         Task<List<T>> GetWhereAsync(Expression<Func<T, bool>> expression);
         Task<T> GetByIdAsync(Guid id);
         Task<T> AddAsync(T model);
+        Task<T> UpdateAsync(T model);
         Task<T> RemoveAsync(T model);
     }
 }
